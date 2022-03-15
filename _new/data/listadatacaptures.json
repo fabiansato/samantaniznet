@@ -1,0 +1,30 @@
+[
+    
+    {"image":"src/assets/img/datacaptures/rexonariver.webp", "title": "Rexona - River", "meta": "Registrate y participá por un par de entradas para alentar a River", "buttonText": "Mirá la promo", "link": "https://www.promounilever.com/RexonaClasicoRiver" },
+
+    {"image":"src/assets/img/datacaptures/deja-para-diluir.webp",  "title": "Ganá una lavadora LG con el Sorteo de Deja para diluir", "meta": "Comprá Deja para diluir, llena el formulario y se parte del sorteo de una Lavadora LG Nueva. Ten un lavado completo y perfecto con Deja y gana fabulosos premios", "buttonText": "Mirá la promo", "link": "https://www.promounilever.com/deja-para-diluir" },
+
+    {"image":"src/assets/img/datacaptures/axe_lolla.webp",  "title": "Sorteo Lollapalooza Argentina 2022 - Ganá entradas con Axe", "meta": "Participá del sorteo para ganar entradas gratis al Lollapalooza Argentina 2022. Entrá acá y ganá un par de tickets con el sorteo de Axe y Lollapalooza", "buttonText": "Mirá la promo", "link": "https://www.axe.com/ar/campaign/axe-lollapalooza-2022.html" },
+
+    {"image":"src/assets/img/datacaptures/Thumbnail.webp",  "title": "Entradas Lollapalooza 2022 - Ganá con Sorteo de Axe y Sedal", "meta": "Disfrutá el festival más importante del año. ¡Participá y ganá entradas al Lollapalooza Argentina 2022! Entrá acá y enterate como ganar un par de tickets", "buttonText": "Mirá la promo", "link": "https://www.promounilever.com/axe-sedal-lollapalooza-2022/" },
+
+    {"image":"src/assets/img/datacaptures/dove_madre.webp",  "title": "Dove Madre e Hijas", "meta": "Disfrutá el festival más importante del año. ¡Participá y ganá entradas al Lollapalooza Argentina 2022! Entrá acá y enterate como ganar un par de tickets", "buttonText": "Mirá la promo", "link": "https://www.promounilever.com/axe-sedal-lollapalooza-2022/" },
+
+    {"image":"src/assets/img/datacaptures/dove-kit-verano.webp",  "title": "Dove Kit de Verano", "meta": "Participá con Dove Kit verano y ganá uno de nuestros exclusivos packs.", "buttonText": "Mirá la promo", "link": "https://www.promounilever.com/dove-kit-verano-2022" },
+
+    {"image":"src/assets/img/datacaptures/dovepelo.webp",  "title": "Dove Pelo", "meta": "Participá con Dove Kit verano y ganá uno de nuestros exclusivos packs.", "buttonText": "Mirá la promo", "link": "https://www.promounilever.com/dove-kit-verano-2022" },
+
+    {"image":"src/assets/img/datacaptures/doveverano.webp",  "title": "Dove Verano", "meta": "¿Querés un masaje relajante, salir a comer al mejor restaurante, clases o más? Participá con Dove Promo verano que podés ganar una experiencia Big Box", "buttonText": "Mirá la promo", "link": "https://www.promounilever.com/doveverano" },
+
+  
+    {"image":"src/assets/img/datacaptures/rexonaverano2022.webp",  "title": "Rexona Promo Verano", "meta": "El calor extremo que sentís en el verano, lo entendemos! Proba Rexona Clinical participa por productos y regalos que Rexona pensó para vos!", "buttonText": "Mirá la promo", "link": "https://www.promounilever.com/rexona-promo-verano-2022" },
+
+    {"image":"src/assets/img/datacaptures/sedalverano2022.webp",  "title": "Sedal Promo Verano", "meta": "Ganá un Meet&Greet Virtual con Lali! También podés ganar un año de productos Sedal", "buttonText": "Mirá la promo", "link": "https://www.promounilever.com/sedal-verano-2022" },
+
+    {"image":"src/assets/img/datacaptures/cifbioactive.webp",  "title": "CIF - BIOACTIVE", "meta": "Contanos tu experiencia con el nuevo Cif BioActive y participá por ¡1 año de producto gratis!", "buttonText": "Mirá la promo", "link": "https://www.promounilever.com/cif-bioactive-sorteo" },
+
+    {"image":"src/assets/img/datacaptures/completaskip.webp",  "title": "Club Skip y CT Skip", "meta": "Registrá tu service - Skip", "buttonText": "Registrate", "link": "https://www.promounilever.com/registra-tu-service" }
+
+
+
+]

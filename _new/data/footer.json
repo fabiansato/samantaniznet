@@ -1,0 +1,18 @@
+[
+    
+    {
+        "footerDesktop": "src/assets/img/footerDesktop.webp",
+        "footerTablet": "src/assets/img/footerTablet.webp",
+        "footerMobile": "src/assets/img/footerMobile.webp",
+        "footerAlt": "Footer Marcas Unilever",
+        "footerLogoAlt": "Footer Logo Unilever",
+        "footerLogo": "src/assets/img/footer.webp",
+        "privacidadUrl": "https://www.unilevernotices.com/argentina/spanish/privacy-notice/notice.html",
+        "privacidadTexto": "Aviso de Privacidad",
+
+        "cookieUrl": "https://www.unilevernotices.com/argentina/spanish/cookie-notice/notice.html",
+        "cookieTexto": "Aviso de Cookies"
+
+    }
+
+]

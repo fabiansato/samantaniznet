@@ -1,0 +1,15 @@
+{
+    "name": "composer-base/text",
+    "autoload":{
+        "psr-4":{
+            "Text\\": "src/"
+        },
+        "files":[
+            "src/helpers.php"
+        ]
+    },
+    "require": {
+        "twbs/bootstrap": "^5.1",
+        "twbs/bootstrap-icons": "^1.8"
+    }
+}
