@@ -1,7 +1,59 @@
+<?php
+$filename = 'data/head.json';
+$data = file_get_contents($filename);
+$head = json_decode($data);
+
+header("X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", true);
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
+
+
+  <!-- Favicons -->
+  <link href="src/assets/img/favicon.ico" rel="icon">
+  <link href="src/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="manifest" href="src/assets/img/manifest.json" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="<?php echo $head[0]->themecolor?>" />
+
+
+<!-- metadescriptions --> 
+<meta charset="<?php echo $head[0]->charset ?>" />
+<title><?php echo $head[0]->title ?></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="<?php echo $head[0]->metadescription ?>" />
+	<meta name="author" content="<?php echo $head[0]->author ?>">
+	<link rel="canonical" href="<?php echo $head[0]->url ?>" />
+	<meta itemprop="name" content="<?php echo $head[0]->brand ?>">
+	<meta itemprop="description" content="<?php echo $head[0]->metadescription ?>">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="<?php echo $head[0]->title?>">
+	<meta name="twitter:description" content="<?php echo $head[0]->metadescription ?>">
+	<meta name="twitter:site" content="<?php echo $head[0]->twitter?>">
+	<meta name="twitter:creator" content="<?php echo $head[0]->twitter?>">
+	<meta name="twitter:image:src" content="<?php echo $head[0]->url?>src/assets/img/ogimage.jpg">
+	<meta name="og:title" content="<?php echo $head[0]->brand?>">
+	<meta name="og:description" content="<?php echo $head[0]->metadescription ?>">
+	<meta name="og:image" content="<?php echo $head[0]->url?>src/assets/img/ogimage.jpg">
+  <meta property="og:image:alt" content="<?php echo $head[0]->title ?>" />
+	<meta name="og:url" content="<?php echo $head[0]->url?>src/assets/img/ogimage.jpg">
+	<meta name="og:site_name" content="<?php echo $head[0]->brand?>">
+	<meta name="og:locale" content="es_AR">
+	<meta name="og:type" content="article">
+	<meta name="article:section" content="Social Media">
+	<meta name="article:author" content="<?php echo $head[0]->brand?> ">
+	<meta name="article:tag" content="Social Media">
+  <meta name="keywords" content="<?php echo $head[0]->keywords?>">
+
+  <meta name="robots" content="index, follow">
+
+
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 

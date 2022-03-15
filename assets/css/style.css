@@ -9,7 +9,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+.header{
+    font-size: 28px;
+line-height: 1;
+font-weight: 700;
+}
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
