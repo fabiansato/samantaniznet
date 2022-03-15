@@ -244,7 +244,7 @@ color: hsl(9, 40%, 60%);
                                 <div class="box" data-aos="zoom-in" data-aos-delay="100">
                                     <h3>Elegiste Plan 4 Meses</h3>
         
-                                    <h4><sup>$</sup>2500<span>/ mes</span></h4>
+                                    <h4><sup>$</sup>2499<span>/ mes</span></h4>
                                       
                                     <ul>
         
