@@ -143,7 +143,7 @@
                 <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                     <div data-aos="zoom-out">
                         <h1>¿Quieres aprender a <span>dibujar?</span></h1>
-                        <h2>Aprende a dibujar manga, desde cero. Curso Virtual. Empezamos en 4 de Abril 2022. ¡Últimos 15
+                        <h2>Aprende a dibujar manga, desde cero. Curso Virtual. Empezamos en 11 de Abril 2022. ¡Últimos 15
                             cupos!</h2>
                         <div class="text-center text-lg-start">
                             <a href="#inscribete" class="btn-get-started scrollto">Suscribirme ahora</a>
@@ -645,7 +645,7 @@ Logré comprender los contenidos perfectamente, las clases son dinámicas y se a
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                                 <p>
-                                4 de abril 2022 </p>
+                                11 de abril 2022 </p>
                             </div>
                         </li>
 
