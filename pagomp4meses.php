@@ -1,196 +1,124 @@
-<!DOCTYPE html>
+<?php
+$filename = 'data/head.json';
+$data = file_get_contents($filename);
+$head = json_decode($data);
 
+header("X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", true);
+
+?>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <!-- Script de recaptcha-->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <meta charset="UTF-8">
+
+  <!-- Favicons -->
+  <link href="src/assets/img/favicon.ico" rel="icon">
+  <link href="src/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="manifest" href="src/assets/img/manifest.json" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="<?php echo $head[0]->themecolor?>" />
+
+<!-- google search console -->
+<meta name="google-site-verification" content="3s9GLOHXBGaLCaB6gANipvORcqyXJ6mUIKxHpJsugNs" />
+<!-- google analytics --> 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SVSTTJRQM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9SVSTTJRQM');
+</script>
+
+<!-- metadescriptions --> 
+<meta charset="<?php echo $head[0]->charset ?>" />
+<title><?php echo $head[0]->title ?></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="<?php echo $head[0]->metadescription ?>" />
+	<meta name="author" content="<?php echo $head[0]->author ?>">
+	<link rel="canonical" href="<?php echo $head[0]->url ?>" />
+	<meta itemprop="name" content="<?php echo $head[0]->brand ?>">
+	<meta itemprop="description" content="<?php echo $head[0]->metadescription ?>">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="<?php echo $head[0]->title?>">
+	<meta name="twitter:description" content="<?php echo $head[0]->metadescription ?>">
+	<meta name="twitter:site" content="<?php echo $head[0]->twitter?>">
+	<meta name="twitter:creator" content="<?php echo $head[0]->twitter?>">
+	<meta name="twitter:image:src" content="<?php echo $head[0]->url?>src/assets/img/ogimage.jpg">
+	<meta name="og:title" content="<?php echo $head[0]->brand?>">
+	<meta name="og:description" content="<?php echo $head[0]->metadescription ?>">
+	<meta name="og:image" content="<?php echo $head[0]->url?>src/assets/img/ogimage.jpg">
+  <meta property="og:image:alt" content="<?php echo $head[0]->title ?>" />
+	<meta name="og:url" content="<?php echo $head[0]->url?>src/assets/img/ogimage.jpg">
+	<meta name="og:site_name" content="<?php echo $head[0]->brand?>">
+	<meta name="og:locale" content="es_AR">
+	<meta name="og:type" content="article">
+	<meta name="article:section" content="Social Media">
+	<meta name="article:author" content="<?php echo $head[0]->brand?> ">
+	<meta name="article:tag" content="Social Media">
+  <meta name="keywords" content="<?php echo $head[0]->keywords?>">
+
+  <meta name="robots" content="index, follow">
+
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Curso de Manga - Samanta Niz</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
   
-<title>Curso de Manga - Samanta Niz</title>
-<meta content="" name="description">
-<meta content="" name="keywords">
 
-<!-- Favicons -->
-<link href="assets/img/favicon.png" rel="icon">
-<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
-<!-- Google Fonts -->
-<link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-<!-- Vendor CSS Files -->
-<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
 
-<!-- Template Main CSS File -->
-<link href="assets/css/style.css" rel="stylesheet">
 
-    <script>
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth() + 1; //January is 0!
-        var yyyy = today.getFullYear();
-        if (dd < 10) {
-            dd = '0' + dd
-        }
-        if (mm < 10) {
-            mm = '0' + mm
-        }
 
-        today = yyyy + '-' + mm + '-' + dd;
-        document.getElementById("datefield").setAttribute("max", today);
-    </script>
 
-    <script>
-        window.console = window.console || function(t) {};
-    </script>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
+                      
+
+                              <script>
+        function metodopago() {
+            location.href = "https://mpago.la/2cohBm4";
         }
     </script>
-<style>
-    @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 
-.mainLoginInput{
-  height: 40px;
-  padding: 0px;
-  font-size: 30px;
-  margin: 5px 0;
-}
 
-.mainLoginInput::-webkit-input-placeholder { 
-font-family: FontAwesome;
-font-weight: normal;
-overflow: visible;
-vertical-align: top;
-display: inline-block !important;
-padding-left: 5px;
-padding-top: 2px;
-color: #537fe2;
-}
 
-.mainLoginInput::-moz-placeholder  { 
-font-family: FontAwesome;
-font-weight: normal;
-overflow: visible;
-vertical-align: top;
-display: inline-block !important;
-padding-left: 5px;
-padding-top: 2px;
-color: #537fe2;
-}
 
-.mainLoginInput:-ms-input-placeholder  { 
-font-family: FontAwesome;
-font-weight: normal;
-overflow: visible;
-vertical-align: top;
-display: inline-block !important;
-padding-left: 5px;
-padding-top: 2px;
-color: hsl(9, 40%, 60%);
-}
-    .form-control{
-        background-color: #edefff;
-        border-color: #537fe2;
-    }
-</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KTSKRCXYM4"></script>
 <script>
-     function metodopago(){
-         location.href = "https://mpago.la/1Uf4zVF";
-     }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KTSKRCXYM4');
 </script>
+
+
 </head>
-
-<script type="text/javascript">
-    /*Inicialización de los select con Jquery*/
-
-
-
-    $(document).ready(function() {
-        $('select').formSelect();
-    });
-
-
-    function ocultarenviar() { // cierra el formulario
-        div = document.getElementById('enviar');
-        div.style.display = 'none';
-    }
-
-
-    function mostrarenviando() { // muestra la thank you page
-        div = document.getElementById('enviando');
-        div.style.display = '';
-    }
-
-    function cerrarformulario() { // cierra el formulario
-        div = document.getElementById('formulario');
-        div.style.visibility = 'hidden';
-    }
-
-
-
-    function mostrarthankyou() { // muestra la thank you page
-
-        div = document.getElementById('thank-you');
-        div.style.display = '';
-        div2 = document.getElementById('thank-you2');
-
-    }
-
-    function scrollToTop() {
-        window.scrollTo(0, 0);
-    }
-</script>
-<link rel="stylesheet" href="pikaday.css">
-
-<!-- Facebook Pixel Code -->
-<!--
-<script>
-    ! function(f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function() {
-            n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '576856525983617');
-    fbq('track', 'PageView');
-
-    function completeRegistration() {
-        fbq('track', 'CompleteRegistration', {
-            value: 1.00,
-            currency: 'USD'
-        });
-        document.getElementById("demo").innerHTML = "OK Complete Registration Pixel  ";
-    }
-</script>-->
-<!--
-<noscript><img height="1" width="1" style="display:none"
-   src="https://www.facebook.com/tr?id=639680160014442&ev=PageView&noscript=1"
- /></noscript>-->
-<!-- End Facebook Pixel Code -->
-
 
 <body aos(); ">
           	  <!-- DANGER Testeos del php OCULTAR Al Cerrar el UAT     -->
@@ -243,8 +171,8 @@ color: hsl(9, 40%, 60%);
                             <div class="col-lg-12 col-md-12">
                                 <div class="box" data-aos="zoom-in" data-aos-delay="100">
                                     <h3>Elegiste Plan 4 Meses</h3>
-        
-                                    <h4><sup>$</sup>2499<span>/ mes</span></h4>
+                                    <h4><del> <sup>$24.99</sup><span> </del>  $19.99 / mes</span></h4>
+                                   
                                       
                                     <ul>
         
@@ -381,10 +309,10 @@ color: hsl(9, 40%, 60%);
                     <div class="center">
                         <button class="btn" type="submit" name="action" onclick="validacionDeCampos()" id="enviar" style="border-radius: 15px;">
                             
-                            <span style=" font-weight: bold;" class="btn-buy">Suscribirme plan 4 Meses</span>
+                            <span style=" font-weight: bold;" class="btn-buy">Inscribirme plan 4 Meses</span>
                            
                           </button>
-
+                          <h3>Recuerda que el curso dura 4 meses en total</h3>
                     </div>
                 </div>
 </main>

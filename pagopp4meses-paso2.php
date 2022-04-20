@@ -1,114 +1,123 @@
-<!DOCTYPE html>
+<?php
+$filename = 'data/head.json';
+$data = file_get_contents($filename);
+$head = json_decode($data);
 
+header("X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", true);
+
+?>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <!-- Script de recaptcha-->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <meta charset="UTF-8">
-  
-<title>Curso de Manga - Samanta Niz</title>
-<meta content="" name="description">
-<meta content="" name="keywords">
 
-<!-- Favicons -->
-<link href="assets/img/favicon.png" rel="icon">
-<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Favicons -->
+  <link href="src/assets/img/favicon.ico" rel="icon">
+  <link href="src/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="manifest" href="src/assets/img/manifest.json" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="<?php echo $head[0]->themecolor?>" />
 
-<!-- Google Fonts -->
-<link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+<!-- google search console -->
+<meta name="google-site-verification" content="3s9GLOHXBGaLCaB6gANipvORcqyXJ6mUIKxHpJsugNs" />
+<!-- google analytics --> 
 
-<!-- Vendor CSS Files -->
-<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-<!-- Template Main CSS File -->
-<link href="assets/css/style.css" rel="stylesheet">
-
-    <script>
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth() + 1; //January is 0!
-        var yyyy = today.getFullYear();
-        if (dd < 10) {
-            dd = '0' + dd
-        }
-        if (mm < 10) {
-            mm = '0' + mm
-        }
-
-        today = yyyy + '-' + mm + '-' + dd;
-        document.getElementById("datefield").setAttribute("max", today);
-    </script>
-
-    <script>
-        window.console = window.console || function(t) {};
-    </script>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
-        }
-    </script>
-<style>
-    @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
-
-.mainLoginInput{
-  height: 40px;
-  padding: 0px;
-  font-size: 30px;
-  margin: 5px 0;
-}
-
-.mainLoginInput::-webkit-input-placeholder { 
-font-family: FontAwesome;
-font-weight: normal;
-overflow: visible;
-vertical-align: top;
-display: inline-block !important;
-padding-left: 5px;
-padding-top: 2px;
-color: #537fe2;
-}
-
-.mainLoginInput::-moz-placeholder  { 
-font-family: FontAwesome;
-font-weight: normal;
-overflow: visible;
-vertical-align: top;
-display: inline-block !important;
-padding-left: 5px;
-padding-top: 2px;
-color: #537fe2;
-}
-
-.mainLoginInput:-ms-input-placeholder  { 
-font-family: FontAwesome;
-font-weight: normal;
-overflow: visible;
-vertical-align: top;
-display: inline-block !important;
-padding-left: 5px;
-padding-top: 2px;
-color: hsl(9, 40%, 60%);
-}
-    .form-control{
-        background-color: #edefff;
-        border-color: #537fe2;
-    }
-</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SVSTTJRQM"></script>
 <script>
-     function metodopago(){
-         location.href = "pagopp1mes-paso2.php";
-     }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9SVSTTJRQM');
 </script>
+
+<!-- metadescriptions --> 
+<meta charset="<?php echo $head[0]->charset ?>" />
+<title><?php echo $head[0]->title ?></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="<?php echo $head[0]->metadescription ?>" />
+	<meta name="author" content="<?php echo $head[0]->author ?>">
+	<link rel="canonical" href="<?php echo $head[0]->url ?>" />
+	<meta itemprop="name" content="<?php echo $head[0]->brand ?>">
+	<meta itemprop="description" content="<?php echo $head[0]->metadescription ?>">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="<?php echo $head[0]->title?>">
+	<meta name="twitter:description" content="<?php echo $head[0]->metadescription ?>">
+	<meta name="twitter:site" content="<?php echo $head[0]->twitter?>">
+	<meta name="twitter:creator" content="<?php echo $head[0]->twitter?>">
+	<meta name="twitter:image:src" content="<?php echo $head[0]->url?>src/assets/img/ogimage.jpg">
+	<meta name="og:title" content="<?php echo $head[0]->brand?>">
+	<meta name="og:description" content="<?php echo $head[0]->metadescription ?>">
+	<meta name="og:image" content="<?php echo $head[0]->url?>src/assets/img/ogimage.jpg">
+  <meta property="og:image:alt" content="<?php echo $head[0]->title ?>" />
+	<meta name="og:url" content="<?php echo $head[0]->url?>src/assets/img/ogimage.jpg">
+	<meta name="og:site_name" content="<?php echo $head[0]->brand?>">
+	<meta name="og:locale" content="es_AR">
+	<meta name="og:type" content="article">
+	<meta name="article:section" content="Social Media">
+	<meta name="article:author" content="<?php echo $head[0]->brand?> ">
+	<meta name="article:tag" content="Social Media">
+  <meta name="keywords" content="<?php echo $head[0]->keywords?>">
+
+  <meta name="robots" content="index, follow">
+
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Curso de Manga - Samanta Niz</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+  
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+                      
+
+                              <script>
+        function metodopago() {
+            location.href = "https://mpago.la/2cohBm4";
+        }
+    </script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KTSKRCXYM4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KTSKRCXYM4');
+</script>
+
+
 </head>
 
 <script type="text/javascript">
@@ -193,6 +202,7 @@ color: hsl(9, 40%, 60%);
 
 
 <body aos(); ">
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>   
           	  <!-- DANGER Testeos del php OCULTAR Al Cerrar el UAT     -->
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center header-transparent"  style="background-color: #0f14a3;">
@@ -255,36 +265,69 @@ color: hsl(9, 40%, 60%);
             <div class="alert alert-danger d-none " id="mensajeError "></div>-->
    
  <div class="section-title" data-aos="fade-up">
-        <p>Paso 2/2</p>
-                                        <p>¡Perfecto ya te registraste! Paga tu curso:</p>
+        <p>Paso 2 de 2</p>
+                                        <p>Falta un sólo paso:</p>
                                     </div>
 
 <div class="row">
- <div class="col-2 col-md-1">
-     
-</div>
+<div class="col-lg-12">
+                            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                     
+                             
+                                <ul>
 
-<div class="col-8 col-md-10">
+                                    <li><b>Elige un plan</b></li>
+                              
+                                    <main role="main" class="container-fluid">       
+            <div class="row text-center justify-content-center"  style="border: 1px solid red;">   
+            <div class="col-12">
+           
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="GU624E4X9LULA">
+<br/>
+<input type="hidden" name="on0" value="Meses">¿Cuántos meses quieres pagar?</td></tr>
+<br/>
 
+<tr><td><select name="os0"  class="form-select form-select-lg mb-3 mx-auto" aria-label=".form-select-lg example">
+<option value="1 mes">1 mes $25,00 USD</option>
+	<option value="4 meses" selected>4 meses $80,00 USD</option>
+
+</select>
+
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.samantaniz.net/assets/img/compraahora.png" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
+<h3>Recuerda que el curso dura 4 meses en total</h3>
+                       
+                   
+                            </div>
+                        </div>
+                        </div>
+            </div>
+    </main>
+
+
+
+
+<!-- promo
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="HQXCP7XW24CYG">
 <table>
-<div id="smart-button-container">
-      <div style="text-align: center;">
-        <div style="margin-bottom: 1.25rem;">
-          <p>Comprar Ahora</p>
-          <select id="item-options"><option value="4 Meses" price="99.99">4 Meses - 99.99 USD</option><option value="1 mes" price="29.99">1 mes - 29.99 USD</option></select>
-          <select style="visibility: hidden" id="quantitySelect"></select>
-        </div>
-      <div id="paypal-button-container"></div>
-      </div>
-    </div>
-
-    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-   
+<tr><td><input type="hidden" name="on0" value="Curso Samanta Niz">Curso Samanta Niz</td></tr><tr><td><select name="os0">
+	<option value="1 MES">1 MES $30,00 USD</option>
+	<option value="4 MESES">4 MESES $100,00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
 </form>
 
+-->
 
 </div>
 
@@ -433,6 +476,7 @@ color: hsl(9, 40%, 60%);
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+
     <script>
       function initPayPalButton() {
         var shipping = 0;
@@ -442,7 +486,7 @@ color: hsl(9, 40%, 60%);
     if (!isNaN(quantity)) {
       quantitySelect.style.visibility = "visible";
     }
-    var orderDescription = 'Paypal';
+    var orderDescription = 'Meses';
     if(orderDescription === '') {
       orderDescription = 'Item';
     }
@@ -524,7 +568,6 @@ color: hsl(9, 40%, 60%);
   }
   initPayPalButton();
     </script>
-
 
 </body>
 

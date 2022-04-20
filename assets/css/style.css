@@ -9,10 +9,15 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+.eligeprecio{
+    font-size: 1.4em;
+}
 .header{
     font-size: 28px;
 line-height: 1;
 font-weight: 700;
+color: #fff !important;
 }
 body {
     font-family: "Open Sans", sans-serif;
@@ -1285,7 +1290,7 @@ section {
     color: #444444;
     text-align: center;
     line-height: 20px;
-    font-size: 14px;
+    font-size: 22px;
 }
 
 .pricing ul li {
@@ -1302,7 +1307,7 @@ section {
     color: #ccc;
     text-decoration: line-through;
 }
-
+select { width: 400px; text-align-last:center; }
 .pricing .btn-wrap {
     margin: 20px -20px -20px -20px;
     padding: 20px 15px;
@@ -1311,13 +1316,13 @@ section {
 }
 
 .pricing .btn-buy {
-    background: #16cecc;
+    background: #ed6a4b;
     display: inline-block;
     padding: 8px 35px 10px 35px;
     border-radius: 50px;
     color: #fff;
     transition: none;
-    font-size: 14px;
+    font-size: 2em;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -1325,7 +1330,7 @@ section {
 }
 
 .pricing .btn-buy:hover {
-    background: #4fe0b5;
+    background: #ff856a;
 }
 
 .pricing .featured h3 {

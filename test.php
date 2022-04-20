@@ -93,17 +93,12 @@ header("X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, ma
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-
-
-
-                      
-
-                              <script>
-        function metodopago() {
-            location.href = "https://mpago.la/2cohBm4";
-        }
-    </script>
-
+    <!-- =======================================================
+  * Template Name: Bootslander - v4.0.1
+  * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 
 
 
@@ -152,43 +147,7 @@ header("X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, ma
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero">
-
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                    <div data-aos="zoom-out">
-                        <h1>¿Quieres aprender a <span>dibujar?</span></h1>
-                        <h2>Aprende a dibujar manga, desde cero. Curso Virtual. <!-- Empezamos en 11 de Abril 2022. ¡Últimos 15
-                            cupos! --></h2>
-                        <div class="text-center text-lg-start">
-                            <a href="#inscribete" class="btn-get-started scrollto">Suscribirme ahora</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-                    <img src="assets/img/hero-img.webp" class="img-fluid animated" alt="">
-                </div>
-            </div>
-        </div>
-
-        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28 " preserveAspectRatio="none">
-            <defs>
-                <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-            </defs>
-            <g class="wave1">
-                <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-            </g>
-            <g class="wave2">
-                <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-            </g>
-            <g class="wave3">
-                <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-            </g>
-        </svg>
-
-    </section>
+ 
     <!-- End Hero -->
 
     <main id="main">
@@ -203,25 +162,13 @@ header("X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, ma
                         <img src="assets/img/details-1.webp" class="img-fluid" alt="">
                     </div>
                     <div class="col-md-8 pt-4" data-aos="fade-up">
-                        <h3>¿Qué aprendes?</h3>
-                        <p class="font-italic">
-                        <p>
-                           Este curso está diseñado para que puedas descubrir y alcanzar tu propio estilo, aprendiendo las mejores técnicas y metodologías usadas en Manga. Súmate a darle vida a tus ideas, potenciar tus habilidades artísticas y dar tus primeros pasos como artista. Descubrí las herramientas para dar tus primeros pasos como dibujante y lleva tu talento a otro nivel.</p>
-                        <p>
-                        Aprendé los diferentes géneros que existen en el manga y como crear personajes simples y complejos para luego darle vida mediante expresiones del rostro, gestualidad y movimiento. Además, de dibujar personajes fantásticos, van a explorar los cambios de la edad, y poder dibujar su versión chibi.  </p>
-                        <p>
-                            Descubrí las mejores técnicas para dibujar indumentarias complejas, accesorios, armas,
-                            animales, es importante también
-                            generar escenas y fondos super atractivos que terminen en imágenes de gran plasticidad y
-                            dinamismo.
-                            Encontra tu propio estilo como artista manteniendo la autenticidad y principios del manga
-                            aprendiendo desde cero y sin
-                            conocimientos previos.</p>
-                        <p>
-                            Mediante un sistema de clase virtual, en vivo, voy a brindarte un feedback personalizado y
-                            una tutoría constante en
-                            todas tus clases.
-                        </p>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="M2DZXU8868UM4">
+<input type="image" src="https://www.paypalobjects.com/es_XC/AR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
+
 
                     </div>
                 </div>
@@ -345,7 +292,7 @@ header("X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, ma
             <div class="container">
                 <div class="section-title" data-aos="fade-up">
                     <h2>Testimonios</h2>
-                    <p style="color:#ffff">Comentarios de alumnos:</p>
+                    <p style="color:#ffff"">Comentarios de alumnos:</p>
                 </div>
 
                 <div class=" testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
@@ -462,9 +409,8 @@ Logré comprender los contenidos perfectamente, las clases son dinámicas y se a
                 <div class="section-title" data-aos="fade-up">
                     <h2>Precios</h2>
                     <p>Inscripciones:</p>
-                    <p><h3>DESCUENTOS POR TIEMPO LIMITADO!😁 </h3></p>
-                            <ul><li>Metódo de pago:</li>
-                                <li><a href="javascript:Pesos();"> Pesos 🇦🇷 </a> | <a href="javascript:Dolares();">Dólar 🌎</a></li>
+                            <ul>
+                                <li><a href="javascript:Pesos();"> Pesos Argentinos</a> | <a href="javascript:Dolares();">USD</a></li>
                             </ul>
                 </div>
 <div id="pesos">
@@ -473,21 +419,19 @@ Logré comprender los contenidos perfectamente, las clases son dinámicas y se a
                     <div class="col-lg-6 col-md-6">
                         <div class="box" data-aos="zoom-in" data-aos-delay="100">
                             <h3>Plan 1 Mes</h3>
-                         
+                       
                             <h4><sup>$</sup>2999<span>/ mes</span></h4>
                             <ul>
-                            <ul>
-                                <li><a href="javascript:Pesos();"> Pesos 🇦🇷 </a> | <a href="javascript:Dolares();">Dólar 🌎</a></li>
-                            </ul>
+                    
                                 <li><b>Curso inicial</b></li>
                                 <li>Válido por 1 mes</li>
                                 <li>Se debe renovar cada mes (4 meses en total)</li>
 
                             </ul>
                             <div class="btn-wrap">
-
+                         
                              
-                                <a href="pagomp1mes.php" class="btn-buy">Inscribirme</a>
+                                <a href="pagomp1mes.php" class="btn-buy">Suscribirme</a>
                                
                             </div>
                         </div>
@@ -500,18 +444,14 @@ Logré comprender los contenidos perfectamente, las clases son dinámicas y se a
               
                             <h4><sup>$</sup>2499<span> / mes</span></h4>
                             <ul>
-                                
-                            <ul>
-                                <li><a href="javascript:Pesos();"> Pesos 🇦🇷 </a> | <a href="javascript:Dolares();">Dólar 🌎</a></li>
-                            </ul>
                                 <li><b>Curso inicial</b></li>
                                 <li>Válido por 4 meses</li>
                                 <li>1 sólo pago</li>
 
                             </ul>
                             <div class="btn-wrap">
-                         
-                                <a  href="pagomp4meses.php"  class="btn-buy">Inscribirme</a>
+                            
+                                <a  href="pagomp4meses.php"  class="btn-buy">Suscribirme</a>
                           
                             </div>
                         </div>
@@ -527,19 +467,16 @@ Logré comprender los contenidos perfectamente, las clases son dinámicas y se a
                         <div class="col-lg-6 col-md-6">
                             <div class="box" data-aos="zoom-in" data-aos-delay="100">
                                 <h3>Plan 1 Mes</h3>
-                                <h4><del> <sup>$29.99</sup><span> </del>  $24.99 / mes</span></h4>
+                                <h4><sup>$</sup>29.99<span> / mes</span></h4>
                                 <ul>
-                                <ul>
-                                <li><a href="javascript:Pesos();"> Pesos 🇦🇷 </a> | <a href="javascript:Dolares();">Dólar 🌎</a></li>
-                            </ul>
                                     <li><b>Curso inicial</b></li>
                                     <li>Válido por 1 mes</li>
                                     <li>Se debe renovar cada mes (son 4 meses)</li>
                             
                                 </ul>
                                 <div class="btn-wrap">
-                        
-                                    <a href="pagopp1mes.php" class="btn-buy">Inscribirme</a>
+                      
+                                    <a href="pagopp1mes.php" class="btn-buy">Suscribirme</a>
                             
                                 </div>
                             </div>
@@ -547,21 +484,17 @@ Logré comprender los contenidos perfectamente, las clases son dinámicas y se a
                 
                         <div class="col-lg-6 col-md-6 mt-4 mt-md-0">
                         <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
-                            <h3>Plan 4 Meses (curso completo)</h3>
-                            <h4><del> <sup>$24.99</sup><span> </del>  $19.99 / mes</span></h4>
-                       
+                            <h3>Plan 4 Meses</h3>
+                            <h4><sup>$</sup>24.99<span> / mes</span></h4>
                             <ul>
-                            <ul>
-                                <li><a href="javascript:Pesos();"> Pesos 🇦🇷 </a> | <a href="javascript:Dolares();">Dólar 🌎</a></li>
-                            </ul>
                                 <li><b>Curso inicial</b></li>
                                 <li>Válido por 4 meses</li>
                                 <li>1 sólo pago por mes</li>
                         
                             </ul>
                             <div class="btn-wrap">
-                          
-                                <a  href="pagopp4meses.php"  class="btn-buy">Inscribirme</a>
+                            
+                                <a  href="pagopp4meses.php"  class="btn-buy">Suscribirme</a>
                       
                             </div>
                         </div>
@@ -667,7 +600,7 @@ Logré comprender los contenidos perfectamente, las clases son dinámicas y se a
                 </div>
 
                 <div class="faq-list">
-                    <ul><!--
+                    <ul>
                         <li data-aos="fade-up">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
                                 data-bs-target="#faq-list-1">¿Cuándo empieza el curso? <i
@@ -678,7 +611,7 @@ Logré comprender los contenidos perfectamente, las clases son dinámicas y se a
                                 11 de abril 2022 </p>
                             </div>
                         </li>
-    -->
+
                         <li data-aos="fade-up" data-aos-delay="100">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
                                 data-bs-target="#faq-list-2" class="collapsed">¿Necesito conocimientos previos? <i
@@ -759,24 +692,7 @@ Logré comprender los contenidos perfectamente, las clases son dinámicas y se a
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-<script type="text/javascript">
-    
-        function Pesos() { // cierra el enviando
-            div = document.getElementById('pesos');
-            div.style.display = '';
-            div2 = document.getElementById('dolar');
-            div2.style.display = "none";
-        }
 
-
-
-        function Dolares() { // muestra la thank you page
-             div = document.getElementById('dolar');
-            div.style.display = '';
-            div2 = document.getElementById('pesos');
-        div2.style.display = "none";
-        }
-</script>
 
 </body>
 
